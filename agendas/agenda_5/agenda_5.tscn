@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b751lxvat2clk"]
+
+[ext_resource type="Script" path="res://agendas/_code/agenda.gd" id="1_n70nu"]
+
+[node name="Agenda5" type="Node"]
+script = ExtResource("1_n70nu")

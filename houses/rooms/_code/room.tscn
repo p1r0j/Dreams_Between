@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxvw2t6kjh1q4"]
+
+[ext_resource type="Script" path="res://houses/rooms/_code/room.gd" id="1_i4twv"]
+[ext_resource type="Script" path="res://houses/rooms/dialogue/dialogue.gd" id="2_qxhpn"]
+
+[node name="Room" type="Node"]
+script = ExtResource("1_i4twv")
+
+[node name="Dialogue" type="Node" parent="."]
+script = ExtResource("2_qxhpn")

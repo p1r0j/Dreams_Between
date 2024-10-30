@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d34mke08ygpen"]
+
+[ext_resource type="Script" path="res://characters/briley/_code/briley.gd" id="1_jv1rw"]
+
+[node name="Briley" type="Node"]
+script = ExtResource("1_jv1rw")

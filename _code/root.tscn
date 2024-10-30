@@ -1,0 +1,42 @@
+[gd_scene load_steps=10 format=3 uid="uid://dp3r2v4lfld6r"]
+
+[ext_resource type="Script" path="res://_code/root.gd" id="1_ipdu2"]
+[ext_resource type="Script" path="res://handlers/player_handler.gd" id="2_27ved"]
+[ext_resource type="Script" path="res://handlers/print_handler.gd" id="2_f5jn5"]
+[ext_resource type="Script" path="res://handlers/error_handler.gd" id="2_w3u41"]
+[ext_resource type="Script" path="res://handlers/house_handler.gd" id="5_k772v"]
+[ext_resource type="Script" path="res://handlers/cutscene_handler.gd" id="6_0jirv"]
+[ext_resource type="PackedScene" uid="uid://bt8t3du4r1bcv" path="res://houses/dad_houses/_code/dad_house.tscn" id="6_2nyjc"]
+[ext_resource type="PackedScene" uid="uid://dhaaf4mjnek6e" path="res://houses/rooms/tutorial/_code/tutorial.tscn" id="6_ko4wm"]
+[ext_resource type="PackedScene" uid="uid://bwmghbnxtlk" path="res://houses/mom_houses/_code/mom_house.tscn" id="7_1r0je"]
+
+[node name="Root" type="Node"]
+script = ExtResource("1_ipdu2")
+
+[node name="PrintHandler" type="Node" parent="."]
+script = ExtResource("2_f5jn5")
+
+[node name="ErrorHandler" type="Node" parent="."]
+script = ExtResource("2_w3u41")
+
+[node name="PlayerHandler" type="Node" parent="."]
+script = ExtResource("2_27ved")
+
+[node name="HouseHandler" type="Node" parent="."]
+script = ExtResource("5_k772v")
+dad_houses = ExtResource("6_2nyjc")
+mom_houses = ExtResource("7_1r0je")
+tutorial = ExtResource("6_ko4wm")
+
+[node name="CutsceneHandler" type="Node" parent="."]
+script = ExtResource("6_0jirv")
+
+[node name="EnemyHandler" type="Node" parent="."]
+
+[node name="PartyHandler" type="Node" parent="."]
+
+[node name="Party1" type="Node" parent="PartyHandler"]
+
+[node name="Party2" type="Node" parent="PartyHandler"]
+
+[node name="Party3" type="Node" parent="PartyHandler"]

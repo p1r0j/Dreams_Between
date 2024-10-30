@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt8t3du4r1bcv"]
+
+[ext_resource type="Script" path="res://houses/dad_houses/_code/dad_house.gd" id="1_dwm46"]
+[ext_resource type="PackedScene" uid="uid://df8cuk7e0dnhd" path="res://houses/dad_houses/dad_rooms/1/_code/dad_room_1.tscn" id="2_uoxy1"]
+
+[node name="DadHouse" type="Node"]
+script = ExtResource("1_dwm46")
+room_1 = ExtResource("2_uoxy1")
